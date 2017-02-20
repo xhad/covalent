@@ -1,0 +1,25 @@
+<md-card>
+  <md-toolbar color="{{color}}">
+    <span class="td-message-icon">
+      <md-icon ngClass="{{iconColor}}">{{icon}}</md-icon>
+    </span>
+    <span *ngIf="messageTitle">{{messageTitle}}</span>
+    <span flex></span>
+    <a md-raised-button color="{{actionPrimaryColor}}" *ngIf="actionPrimary && actionPrimaryText" [routerLink]="actionPrimary">
+      <span>{{actionPrimaryText}}</span>
+    </a>
+    <md-toolbar-row *ngIf="messageSubtitle">
+      <span class="md-subhead">{{messageSubtitle}}</span>
+    </md-toolbar-row>
+  </md-toolbar>
+  <md-card-content *ngIf="message">
+    <p class="md-body-1">{{message}}</p>
+  </md-card-content>
+  <ng-content></ng-content>
+  <div *ngIf="td-message-actions">
+    <md-divider></md-divider>
+    <div layout="row">
+      <ng-content select="td-message-actions"></ng-content>
+    </div>
+  </div>
+</md-card>
