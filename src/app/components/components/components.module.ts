@@ -26,6 +26,7 @@ import { MaterialComponentsComponent, DialogComponent } from './material-compone
 import { NotificationsDemoComponent } from './notifications/notifications.component';
 import { NgxChartsDemoComponent } from './ngx-charts/ngx-charts.component';
 import { NgxTranslateDemoComponent } from './ngx-translate/ngx-translate.component';
+import { MessagingDemoComponent } from './messaging/messaging.component';
 
 // External Dependencies
 import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -67,6 +68,7 @@ import { DocumentationToolsModule } from '../../documentation-tools';
     // External Dependencies
     NgxChartsDemoComponent,
     NgxTranslateDemoComponent,
+    MessagingDemoComponent,
   ],
   imports: [
     CovalentCoreModule,

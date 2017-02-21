@@ -80,6 +80,11 @@ export class ComponentsComponent implements AfterViewInit {
     route: 'search',
     title: 'Search',
   }, {
+    description: 'Info, warnings & erros',
+    icon: 'info',
+    route: 'messaging',
+    title: 'Messaging',
+  }, {
     description: 'Responsive service & directive',
     icon: 'devices',
     route: 'media',

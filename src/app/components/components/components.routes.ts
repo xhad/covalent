@@ -24,6 +24,7 @@ import { MaterialComponentsComponent } from './material-components/material-comp
 import { NotificationsDemoComponent } from './notifications/notifications.component';
 import { NgxChartsDemoComponent } from './ngx-charts/ngx-charts.component';
 import { NgxTranslateDemoComponent } from './ngx-translate/ngx-translate.component';
+import { MessagingDemoComponent } from './messaging/messaging.component';
 
 const routes: Routes = [{
   children: [{
@@ -95,6 +96,9 @@ const routes: Routes = [{
     }, {
       component: NgxTranslateDemoComponent,
       path: 'ngx-translate',
+    }, {
+      component: MessagingDemoComponent,
+      path: 'messaging',
     },
   ],
   component: ComponentsComponent,
