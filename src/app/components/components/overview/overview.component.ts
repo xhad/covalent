@@ -74,6 +74,11 @@ export class ComponentsOverviewComponent {
       route: 'search',
       title: 'Search',
     }, {
+      color: 'blue-900',
+      icon: 'info',
+      route: 'messaging',
+      title: 'Messaging',
+    }, {
       color: 'red-700',
       icon: 'devices',
       route: 'media',
