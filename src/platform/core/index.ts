@@ -106,6 +106,13 @@ import { CovalentSearchModule } from './search/search.module';
 export * from './search/search.module';
 
 /**
+ * MESSAGING
+ */
+
+import { CovalentMessagingModule } from './messaging/messaging.module';
+export * from './messaging/messaging.module';
+
+/**
  * STEPS
  */
 
@@ -134,6 +141,7 @@ export * from './steps/steps.module';
     CovalentNotificationsModule.forRoot(),
     CovalentPagingModule.forRoot(),
     CovalentSearchModule.forRoot(),
+    CovalentMessagingModule.forRoot(),
     CovalentStepsModule.forRoot(),
   ],
   exports: [
@@ -157,6 +165,7 @@ export * from './steps/steps.module';
     CovalentNotificationsModule,
     CovalentPagingModule,
     CovalentSearchModule,
+    CovalentMessagingModule,
     CovalentStepsModule,
   ],
 })
