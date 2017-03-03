@@ -10,6 +10,7 @@ import { TdLayoutNavComponent } from './layout-nav/layout-nav.component';
 import { TdLayoutNavListComponent } from './layout-nav-list/layout-nav-list.component';
 import { TdLayoutCardOverComponent } from './layout-card-over/layout-card-over.component';
 import { TdLayoutManageListComponent } from './layout-manage-list/layout-manage-list.component';
+import { TdLayoutManageListContentComponent } from './layout-manage-list/layout-manage-list-content/layout-manage-list-content.component';
 import { TdLayoutFooterComponent } from './layout-footer/layout-footer.component';
 
 import { TdNavigationDrawerComponent, TdNavigationDrawerMenuDirective } from './navigation-drawer/navigation-drawer.component';
@@ -20,6 +21,7 @@ const TD_LAYOUTS: Type<any>[] = [
   TdLayoutNavListComponent,
   TdLayoutCardOverComponent,
   TdLayoutManageListComponent,
+  TdLayoutManageListContentComponent,
   TdLayoutFooterComponent,
 
   TdNavigationDrawerComponent,
@@ -27,7 +29,7 @@ const TD_LAYOUTS: Type<any>[] = [
 ];
 
 export { TdLayoutComponent, TdLayoutNavComponent, TdLayoutNavListComponent,
-          TdLayoutCardOverComponent, TdLayoutManageListComponent,
+          TdLayoutCardOverComponent, TdLayoutManageListComponent, TdLayoutManageListContentComponent,
           TdLayoutFooterComponent, TdNavigationDrawerComponent, TdNavigationDrawerMenuDirective };
 
 @NgModule({
