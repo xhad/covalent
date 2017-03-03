@@ -1,6 +1,8 @@
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild, ContentChild, Query } from '@angular/core';
 
 import { MdSidenav, MdSidenavToggleResult } from '@angular/material';
+
+import { TdLayoutManageListContentComponent } from './layout-manage-list-content/layout-manage-list-content.component';
 
 @Component({
   selector: 'td-layout-manage-list',
@@ -10,6 +12,7 @@ import { MdSidenav, MdSidenavToggleResult } from '@angular/material';
 export class TdLayoutManageListComponent {
 
   @ViewChild(MdSidenav) _sideNav: MdSidenav;
+  @ContentChild(TdLayoutManageListContentComponent) _content: TdLayoutManageListContentComponent;
 
   /**
    * mode?: 'side', 'push' or 'over'
@@ -50,6 +53,10 @@ export class TdLayoutManageListComponent {
    */
   get disableClose(): boolean {
     return this.mode === 'side';
+  }
+
+  get isContentChildAvailable(): boolean {
+    return !!this._content;
   }
 
   /**
